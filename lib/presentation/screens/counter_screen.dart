@@ -36,10 +36,6 @@ class CounterScreen extends StatelessWidget {
                 ),
                 BlocBuilder<CounterCubit, CounterCubitState>(
                   builder: (context, state) {
-                    if (state.counterValue == 5) {
-                      print("Build");
-                    }
-                    //   print("Build");
                     return Text(
                       state.counterValue.toString(),
                       style: Theme.of(context).textTheme.headlineMedium,
